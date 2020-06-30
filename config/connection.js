@@ -28,7 +28,7 @@ class Database {
   if( process.env.JAWSDB_URL ){
       connection = mysql.createConnection( process.env.JAWSDB_URL )
   }else{
-      const db = new Database({
+      connection = new Database({
         host: "localhost",
         port: 3306,
         user: process.env.DB_USER,
@@ -38,4 +38,4 @@ class Database {
       })
   }
   
-  module.exports = db
+  module.exports = connection
