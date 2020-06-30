@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     
     <title>Eat Da Burger</title>
 </head>
-<body>
+<body style="background-color: orange;">
+    <div class="container" style="align-items: center; justify-content:center;">
+        <img src="https://freeiconshop.com/wp-content/uploads/edd/burger-flat.png" />
+        <h1>Eat Da Burger</h1>
+    
     {{{ body }}}
+
+    <form action="/" method="POST">
+        <div class="mb-3">
+            <label for="burgerInput" class="form-label">Enter a burger name to devour it!</label>
+            <textarea class="form-control" name="burger" aria-label="With textarea"></textarea>
+        </div>
+
+        <button class="btn-secondary">Submit</button>
+    </form>    
+    </div>
 </body>
 </html>
