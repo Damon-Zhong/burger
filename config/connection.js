@@ -38,4 +38,6 @@ class Database {
       })
   }
   
+  db.connect();
+  
   module.exports = db
