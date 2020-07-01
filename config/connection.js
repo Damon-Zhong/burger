@@ -37,7 +37,5 @@ class Database {
         insecureAuth : true
       })
   }
-  
-  db.connect();
-  
+
   module.exports = db

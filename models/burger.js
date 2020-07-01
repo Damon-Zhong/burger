@@ -7,14 +7,14 @@ const orm = require("../config/orm.js")
 async function getAvailable(){
     const burgerList = await orm.selectAll()
     // console.log(burgerList)
-    return burgerList
-    // return burgerList.filter( burger=>burger.devoured == false )
+    // return burgerList
+    return burgerList.filter( burger=>burger.devoured == false )
 }
 
 async function getDevoured(){
     const burgerList = await orm.selectAll()
-    return burgerList
-    // return burgerList.filter( burger=>burger.devoured == true )
+    // return burgerList
+    return burgerList.filter( burger=>burger.devoured == true )
 }
 
 function addBurger( name ){
