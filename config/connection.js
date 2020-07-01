@@ -1,5 +1,5 @@
 const mysql = require("mysql");
-var connection
+var db
 
 class Database {
     constructor( config ) {
@@ -26,9 +26,9 @@ class Database {
   }
   
   if( process.env.JAWSDB_URL ){
-      connection = mysql.createConnection( process.env.JAWSDB_URL )
+      db = mysql.createConnection( process.env.JAWSDB_URL )
   }else{
-      connection = new Database({
+      db = new Database({
         host: "localhost",
         port: 3306,
         user: process.env.DB_USER,
@@ -38,4 +38,4 @@ class Database {
       })
   }
   
-  module.exports = connection
+  module.exports = db

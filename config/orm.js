@@ -1,7 +1,7 @@
 const db = require("./connection")
 
 function selectAll(){
-    return db.query( "SELECT * FROM mjohl0f68bqcvdh3.burgers")
+    return db.query( "SELECT * FROM burgers")
 }
 
 function insertOne( name ){
